@@ -1,6 +1,6 @@
 {
   "baseUrl": "https://atlcloudconf.com",
-  "eventDate": "2024-03-23T12:30:00Z", 
+  "eventDate": "2025-04-26T12:30:00Z", 
   "googleApiKey": "",
   "location": {
     "name": "Kenessaw State - Marietta",
@@ -13,10 +13,10 @@
     }
   },
   "callForSpeakers": {
-    "openDate": "2023-01-01",
-    "closeDate": "2023-02-15"
+    "openDate": "2025-01-01",
+    "closeDate": "2025-03-23"
   },
   "sessionize": {
-    "embedId": "benydyvn"
+    "embedId": "0gqooth4"
   }
 }
