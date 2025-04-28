@@ -33,6 +33,7 @@
                 "bg_width": 1.0,
                 "fg_width": 0.1,
                 "circle_bg_color": "#ddd",
+                "count_past_zero": false,
                 "time": {
                     "Days": {
                         "text": "Days",
