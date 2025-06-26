@@ -5,9 +5,15 @@ template: home
 ---
 {% include "banner.njk" %}
 {# {% include "nextyear.njk" %} #}
-{% include "keynote.njk" %}
-{% include "about.njk" %} 
-{% include "register.njk" %}
+{# {% include "keynote.njk" %} #}
+
+{# REGISTRATION #}
+{# ANNOUNCE: Show the following line when tickets are available. #}
+{# {% include "register.njk" %} #} 
+
+{% include "speakers.njk" %}
+
 {% include "sponsors.njk" %}
+
 {% include "map.njk" %}
 {% include "app.njk" %}
