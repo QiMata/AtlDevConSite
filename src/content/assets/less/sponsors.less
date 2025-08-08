@@ -4,13 +4,20 @@
   -o-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+
   .lgx-inner {
     .bg-rgba(@body-bg-deep, 0.95);
   }
+
+  .button-download-sponsorship-packet {
+    margin-bottom: 3rem;
+  }
+
   .sponsors-btn-area {
     text-align: center;
     margin-top: 1.6rem;
   }
+
   .sponsored-heading {
     .font-size(26);
     font-weight: 700;
@@ -20,11 +27,14 @@
     margin: 4.2rem 0 2.6rem 0;
     display: block;
   }
+
   .first-heading {
     margin-top: 0;
   }
+
   .sponsors-area {
     text-align: center;
+
     .single {
       background: @white-color;
       margin: 0 .5%;
@@ -33,25 +43,29 @@
       width: 23%;
       display: inline-block;
       margin-bottom: 2.6rem;
-        -webkit-transition: all .3s ease-in-out 0s;
-        -moz-transition: all .3s ease-in-out 0s;
-        -o-transition: all .3s ease-in-out 0s;
-        transition: all .3s ease-in-out 0s;
+      -webkit-transition: all .3s ease-in-out 0s;
+      -moz-transition: all .3s ease-in-out 0s;
+      -o-transition: all .3s ease-in-out 0s;
+      transition: all .3s ease-in-out 0s;
+
       a {
         background: @white-color;
         display: block;
         padding: 1.5rem 1rem;
         border-radius: 4px;
-        -webkit-box-shadow: 0 0px 10px rgba(0,0,0,.25);
-        -moz-box-shadow: 0 0px 10px rgba(0,0,0,.25);
-        box-shadow: 0 0px 10px rgba(0,0,0,.25);
+        -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, .25);
+        -moz-box-shadow: 0 0px 10px rgba(0, 0, 0, .25);
+        box-shadow: 0 0px 10px rgba(0, 0, 0, .25);
         text-align: center;
+
         img {
           max-width: 180px;
         }
       }
+
       &:hover {
         background: @brand-color;
+
         a {
           img {
             -webkit-animation-name: zoomIn;

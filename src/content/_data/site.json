@@ -3,18 +3,18 @@
   "eventDate": "2025-10-11T08:00:00Z",
   "googleApiKey": "",
   "location": {
-    "name": "Innovation Academy",
+    "name": "Kennesaw State University",
     "address": {
-      "street": "125 Milton Ave",
-      "city": "Alpharetta",
+      "street": "1000 Chastain Rd NW,",
+      "city": "Kennesaw",
       "state": "GA",
       "postalCode": "30009",
-      "googleMapUrl": "https://maps.app.goo.gl/GSphVfvGLEZWxrKL8"
+      "googleMapUrl": "https://maps.app.goo.gl/?q=Kennesaw%20State%20University%2C%201000%20Chastain%20Rd%20NW%2C%20Kennesaw%2C%20GA%2030144"
     }
   },
   "callForSpeakers": {
-    "openDate": "2024-06-15",
-    "closeDate": "2024-08-15"
+    "openDate": "2025-08-01",
+    "closeDate": "2025-08-31"
   },
   "sessionize": {
     "embedId": "tqwg0na7"
