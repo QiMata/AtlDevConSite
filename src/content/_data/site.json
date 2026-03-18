@@ -3,13 +3,13 @@
   "eventDate": "2026-05-30T12:30:00Z",
   "googleApiKey": "",
   "location": {
-    "name": "Kenessaw State - Marietta",
+    "name": "FCS Innovation Academy",
     "address": {
-      "street": "840 Polytechnic Ln",
-      "city": "Marietta",
+      "street": "125 Milton Ave",
+      "city": "Alpharetta",
       "state": "GA",
-      "postalCode": "30060",
-      "googleMapUrl": "https://goo.gl/maps/o4DrXMHJdjJjQtFSA"
+      "postalCode": "30009",
+      "googleMapUrl": "https://maps.google.com/?q=125+Milton+Ave,+Alpharetta,+GA+30009"
     }
   },
   "callForSpeakers": {
