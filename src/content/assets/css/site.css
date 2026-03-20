@@ -92,22 +92,54 @@ img.logo {
 }
 
 .announcement {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   margin: 0;
   text-align: center;
-  padding: .5rem 0;
+  padding: 1rem 0.5rem;
   background-color: #00b9ff;
-  font-size: 1.5rem;
-  color: #222;
+  font-size: 1.8rem;
+  color: #fff;
   font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
 }
 
 .announcement a {
-  color: rgb(252, 252, 184);
-  text-shadow: #888 1px 1px 5px;
+  color: #ffeb3b;
+  text-shadow: #000 1px 1px 3px;
+  text-decoration: underline;
 }
 
 .announcement a:hover {
+  color: #fff;
   text-shadow: #000 2px 2px 5px;
+}
+
+/* Adjust header position to account for announcement banner */
+.lgx-header {
+  top: calc(3rem + 4.5rem) !important;
+}
+
+/* Mobile-specific enhancements for announcement */
+@media only screen and (max-width: 640px) {
+  .announcement {
+    padding: 1.5rem 1rem;
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+  
+  .lgx-header {
+    top: calc(3rem + 5.5rem) !important;
+  }
+  
+  .lgx-header .lgx-navbar .lgx-logo a img {
+    max-height: 45px !important;
+    margin-top: 4px;
+  }
 }
 
 .lgx-about .topic-list {
