@@ -4,7 +4,8 @@ img.logo {
   margin-bottom: 10px;
 }
 
-.lgx-map, .lgx-map .heading {
+.lgx-map,
+.lgx-map .heading {
   color: #fff;
 }
 
@@ -12,7 +13,7 @@ img.logo {
   color: rgb(134, 134, 134);
 }
 
-#sessionize.sessionize-wrapper .sz-session.sz-session--full .sz-session__room, 
+#sessionize.sessionize-wrapper .sz-session.sz-session--full .sz-session__room,
 #sessionize.sessionize-wrapper .sz-session.sz-session--full .sz-session__time {
   display: none !important;
 }
@@ -32,13 +33,13 @@ img.logo {
 .lgx-banner-gradient .lgx-inner,
 .lgx-banner-gradient .bg-transparent,
 .bg-transparent {
-  background: transparent !important;  
+  background: transparent !important;
 }
 
 .lgx-banner-gradient .lgx-inner,
 .lgx-banner-gradient .bg-semitransparent,
 .bg-semitransparent {
-  background: rgba(24,24,24,.65) !important;  
+  background: rgba(24, 24, 24, .65) !important;
 }
 
 .lgx-banner .date span {
@@ -72,10 +73,10 @@ img.logo {
 }
 
 .btn-xl {
-  padding:12px 18px;
-  font-size:24px;
-  line-height:1.5;
-  border-radius:6px
+  padding: 12px 18px;
+  font-size: 24px;
+  line-height: 1.5;
+  border-radius: 6px
 }
 
 .mt-4 {
@@ -131,11 +132,11 @@ img.logo {
     font-size: 1.6rem;
     line-height: 1.4;
   }
-  
+
   .lgx-header {
     top: calc(3rem + 5.5rem) !important;
   }
-  
+
   .lgx-header .lgx-navbar .lgx-logo a img {
     max-height: 45px !important;
     margin-top: 4px;
@@ -143,12 +144,13 @@ img.logo {
 }
 
 .lgx-about .topic-list {
-  padding-left: 2rem; 
+  padding-left: 2rem;
 }
 
 .fallback-schedule {
   display: none;
 }
+
 .fallback-schedule.mobile {
   display: block;
 }
@@ -158,6 +160,7 @@ img.logo {
   .fallback-schedule {
     display: block;
   }
+
   .fallback-schedule.mobile {
     display: none;
   }
