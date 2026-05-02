@@ -18,6 +18,10 @@ img.logo {
   display: none !important;
 }
 
+.lgx-header {
+  top: 0 !important;
+}
+
 .lgx-header.menu-onscroll {
   top: 0;
 }
@@ -121,9 +125,9 @@ img.logo {
 }
 
 /* Adjust header position to account for announcement banner */
-.lgx-header {
+/* .lgx-header {
   top: calc(3rem + 4.5rem) !important;
-}
+} */
 
 /* Mobile-specific enhancements for announcement */
 @media only screen and (max-width: 640px) {
