@@ -5,14 +5,21 @@ template: home
 ---
 {% include "banner.njk" %}
 {# {% include "nextyear.njk" %} #}
+
+{# KEYNOTE #}
+{# NOTE: the presenting speaker's name/photo/bio is commented out inside keynote.njk until confirmed for this year. #}
 {% include "keynote.njk" %}
 
 {# REGISTRATION #}
 {# ANNOUNCE: Show the following line when tickets are available. #}
-{# {% include "register.njk" %} #} 
+{# {% include "register.njk" %} #}
 
-{% include "speakers.njk" %}
+{# SPEAKERS #}
+{# ANNOUNCE: Show the following line when the speaker lineup is ready. #}
+{# {% include "speakers.njk" %} #}
 
+{# SPONSORS #}
+{# NOTE: the confirmed sponsor logos are commented out inside sponsors.njk until confirmed for this year; the sponsorship-packet call to action stays visible. #}
 {% include "sponsors.njk" %}
 
 {% include "map.njk" %}
