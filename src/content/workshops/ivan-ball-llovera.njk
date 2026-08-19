@@ -1,0 +1,225 @@
+---
+title: "Build a Modular Monolith with an AI Pair - Ivan Ball-llovera"
+layout: _basiclayout.njk
+pagename: "Pre-Conference Workshop"
+icon: "wrench"
+eleventyExcludeFromCollections: true
+---
+
+<section>
+  <div class="lgx-workshop-detail">
+    <div class="container">
+      
+      <!-- Header -->
+      <div class="row">
+        <div class="col-xs-12">
+          <div style="margin-bottom: 30px;">
+            <span class="badge" style="background-color: #e74c3c; color: white; padding: 8px 15px; font-size: 14px; margin-bottom: 15px; display: inline-block;">PRE-CONFERENCE WORKSHOP</span>
+            <h1 style="color: #e74c3c; margin-bottom: 10px;">Build a Modular Monolith with an AI Pair</h1>
+            <h2 style="color: #555; font-size: 24px; font-style: italic; font-weight: normal;">Architecture First, AI Fast: A Hands-On Day of Modular Monoliths and Agentic Development</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Instructor Bio -->
+      <div class="row" style="margin-bottom: 40px; padding: 30px; background-color: #f8f9fa; border-radius: 10px;">
+        <div class="col-xs-12 col-md-3 text-center">
+          <img src="/assets/img/speakers/Ivan.png" alt="Ivan Ball-llovera" class="img-responsive" style="border-radius: 10px; margin-bottom: 20px;"/>
+        </div>
+        <div class="col-xs-12 col-md-9">
+          <h3 style="margin-top: 0; color: #e74c3c;">Your Instructor: Ivan Ball-llovera</h3>
+          <p class="lead" style="margin-bottom: 15px;"><strong>Senior Software Architect | 25+ Years Microsoft Stack</strong></p>
+          <p>Ivan is a Senior Software Architect with 25+ years turning complex business problems into scalable, cloud-native systems on the Microsoft stack. His focus is architecture that lasts: Domain-Driven Design, Clean Architecture, and CQRS applied to real platforms that begin as modular monoliths and extract cleanly into microservices.</p>
+          <p>He pairs architectural expertise with hands-on Azure and DevOps (Bicep, Docker, Kubernetes, CI/CD, OIDC / Managed Identity) so the designs sketched on a whiteboard actually ship, run, and recover in production. Ivan has led architectural refactors across insurance, government, and enterprise software at Assurant, Hitachi Solutions, and biBERK.</p>
+          <p>Today he builds production-grade .NET 10 platforms using AI-assisted development (Claude Code, GitHub Copilot) to ship faster without sacrificing quality. Beyond the code, Ivan helps lead the Atlanta tech community as one of the organizers of the Atlanta Cloud + AI Conference and the Atlanta Developers Conference.</p>
+          <p><strong>Core toolkit:</strong> .NET / C#, Blazor, .NET MAUI, ASP.NET Core, .NET Aspire, EF Core, Azure (Container Apps, Service Bus, Cosmos DB, SQL), DDD, CQRS, gRPC, YARP, and the outbox pattern. <em>Bilingual: English / Spanish</em></p>
+        </div>
+      </div>
+
+      <!-- Workshop Details -->
+      <div class="row" style="margin-bottom: 30px;">
+        <div class="col-xs-12 col-md-8">
+          <p class="lead"><strong><i class="fa fa-calendar"></i> When:</strong> Full Day (9:00 AM - 5:00 PM)</p>
+          <p class="lead"><strong><i class="fa fa-map-marker"></i> Where:</strong> 11675 Rainwater Dr #100, Alpharetta, GA 30009</p>
+          <p class="lead"><strong><i class="fa fa-users"></i> Level:</strong> Intermediate .NET developers, tech leads, architects</p>
+        </div>
+        <div class="col-xs-12 col-md-4 text-right">
+          <a href="https://events.ticketleap.com/tickets/developers-association-georgia/atlanta-developers-conference-precon" target="_blank" class="lgx-btn lgx-btn-red" style="margin-top: 10px; padding: 15px 30px; font-size: 18px;">
+            <span>Register Now</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Thesis -->
+      <div class="row">
+        <div class="col-xs-12">
+          <div style="background-color: #f8f9fa; padding: 25px; border-radius: 8px; margin-bottom: 30px; border-left: 4px solid #e74c3c;">
+            <h3 style="margin-top: 0; color: #e74c3c;"><i class="fa fa-lightbulb-o"></i> Workshop Thesis</h3>
+            <p style="font-size: 16px; margin-bottom: 0;">Good architecture and agentic AI tooling are multipliers of each other: clear boundaries, explicit rules, and executable fitness tests are exactly what make an AI coding agent effective, and the agent is what makes the ceremony of a well-layered system cheap enough to actually build. This workshop teaches both at once by building one system with both.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Abstract -->
+      <div class="row">
+        <div class="col-xs-12">
+          <h3 style="color: #333;"><i class="fa fa-file-text-o"></i> What This Workshop Is About</h3>
+          <p>Microservices promised independent teams and independent scaling, and delivered distributed debugging, flaky integration environments, and a network hop inside every business transaction. The industry answer is now clear: start with a well-modularized monolith and extract services only when something real (team size, scaling, isolation) forces it. Meanwhile, AI coding assistants went from autocomplete to agents that read, plan, edit, and run tests, and most teams still use them like a fancy search box.</p>
+          
+          <p>This hands-on workshop teaches both, together, because they reinforce each other. Starting from an empty solution, you will build a modular monolith on .NET 10 with an AI pair (Claude Code) doing the heavy lifting while you make the architectural decisions: rich domain models whose factory methods return results instead of throwing, a hand-rolled CQRS pipeline that gives you validation and logging for free (no frameworks, you will see every line), reliable messaging via the outbox pattern, and architecture fitness tests that fail the build when someone (human or AI) violates a layer rule.</p>
+          
+          <p>Along the way you learn the agentic workflow that makes it fast: project context files, plan-first prompting, test-driven loops, hooks that make dangerous operations impossible, and reviewing AI diffs like a reviewer instead of rubber-stamping.</p>
+          
+          <p style="font-size: 18px; font-weight: bold; color: #e74c3c; margin-top: 20px;">The finale keeps the morning's promise twice over: we take a module and run it as its own service behind a YARP gateway with no rewrite, and we let the fitness tests catch the AI breaking a rule, live.</p>
+        </div>
+      </div>
+
+      <!-- What You'll Build & Learn -->
+      <div class="row" style="margin-top: 40px;">
+        <div class="col-xs-12 col-md-6">
+          <div style="background-color: #fff; padding: 25px; border: 2px solid #e74c3c; border-radius: 8px; height: 100%; margin-bottom: 20px;">
+            <h3 style="margin-top: 0; color: #e74c3c;"><i class="fa fa-check-circle"></i> What You'll Build</h3>
+            <ul style="line-height: 2;">
+              <li>A complete modular monolith on .NET 10</li>
+              <li>Hand-rolled CQRS pipeline (no frameworks)</li>
+              <li>Rich domain models with factory methods</li>
+              <li>Reliable messaging via outbox pattern</li>
+              <li>Architecture fitness tests</li>
+              <li>Extractable microservice behind YARP gateway</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div style="background-color: #fff; padding: 25px; border: 2px solid #3498db; border-radius: 8px; height: 100%; margin-bottom: 20px;">
+            <h3 style="margin-top: 0; color: #3498db;"><i class="fa fa-graduation-cap"></i> What You'll Learn</h3>
+            <ul style="line-height: 2;">
+              <li>Domain-Driven Design building blocks</li>
+              <li>Clean Architecture on .NET 10</li>
+              <li>Agentic AI workflow patterns</li>
+              <li>Test-driven development with AI pairs</li>
+              <li>Module extraction strategies</li>
+              <li>Production-ready AI coding practices</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prerequisites -->
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-xs-12">
+          <div style="padding: 25px; background-color: #fff3cd; border-radius: 8px; border-left: 4px solid #ffc107;">
+            <h3 style="margin-top: 0; color: #856404;"><i class="fa fa-laptop"></i> Prerequisites (sent to attendees ahead of time)</h3>
+            <ul style="margin-bottom: 10px; line-height: 1.8;">
+              <li><strong>.NET 10 SDK</strong></li>
+              <li><strong>Docker Desktop</strong> (SQL Server runs as a container; nothing to install)</li>
+              <li><strong>Claude Code</strong> installed (CLI or VS Code / JetBrains extension) and signed in; a Claude subscription (Pro or Max) or an API key. <em>Those who cannot use Claude Code can still do every lab by hand; each lab handout includes the manual path.</em></li>
+              <li><strong>Git</strong> and an IDE of choice (VS, Rider, VS Code)</li>
+            </ul>
+            <p style="margin-bottom: 0; font-size: 16px;"><strong><i class="fa fa-info-circle"></i> Setup clinic available 8:15-9:00 AM</strong> for anyone who needs help</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agenda -->
+      <div class="row" style="margin-top: 40px;">
+        <div class="col-xs-12">
+          <h3 style="color: #333; margin-bottom: 25px;"><i class="fa fa-calendar"></i> Full Day Agenda (9:00 AM - 5:00 PM)</h3>
+          
+          <div style="margin-left: 20px;">
+            <div style="border-left: 4px solid #e74c3c; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px;">
+              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">9:00-9:45 AM</h4>
+              <strong style="font-size: 16px;">Why modular monoliths won, and what AI changes</strong>
+              <p style="margin-top: 8px; margin-bottom: 0;">The microservices hangover; the monolith-first path; what "extractable" actually requires. What an agentic coding tool actually is and why architecture discipline is precisely what makes it effective.</p>
+            </div>
+
+            <div style="border-left: 4px solid #e74c3c; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px;">
+              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">9:45-10:30 AM</h4>
+              <strong style="font-size: 16px;">Lab 1: Zero to walking skeleton, AI-assisted</strong>
+              <p style="margin-top: 8px; margin-bottom: 0;">Create the blank solution and let the agent scaffold the layer skeleton. Learn to write the context file (CLAUDE.md), use plan mode, and review before approving.</p>
+            </div>
+
+            <div style="border-left: 4px solid #95a5a6; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px; background-color: #ecf0f1;">
+              <h4 style="color: #95a5a6; margin-bottom: 8px; margin-top: 0;">10:30-10:45 AM</h4>
+              <strong style="font-size: 16px;">Break</strong>
+            </div>
+
+            <div style="border-left: 4px solid #e74c3c; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px;">
+              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">10:45 AM-12:00 PM</h4>
+              <strong style="font-size: 16px;">Lab 2: The domain layer - making illegal states unrepresentable</strong>
+              <p style="margin-top: 8px; margin-bottom: 0;">DDD building blocks: aggregates, factory methods returning Result&lt;T&gt;, value objects, domain events. Write tests first, let the agent make them pass, review the diff.</p>
+            </div>
+
+            <div style="border-left: 4px solid #95a5a6; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px; background-color: #ecf0f1;">
+              <h4 style="color: #95a5a6; margin-bottom: 8px; margin-top: 0;">12:00-1:00 PM</h4>
+              <strong style="font-size: 16px;">Lunch</strong>
+            </div>
+
+            <div style="border-left: 4px solid #e74c3c; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px;">
+              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">1:00-2:15 PM</h4>
+              <strong style="font-size: 16px;">Lab 3: CQRS by hand, and the decorator pipeline</strong>
+              <p style="margin-top: 8px; margin-bottom: 0;">Commands vs queries; hand-rolled decorator pattern for validation and logging. Add complete vertical slices with the agent doing the ceremony.</p>
+            </div>
+
+            <div style="border-left: 4px solid #e74c3c; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px;">
+              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">2:15-3:00 PM</h4>
+              <strong style="font-size: 16px;">Events and the outbox: reliable messaging without distributed transactions</strong>
+              <p style="margin-top: 8px; margin-bottom: 0;">Domain events vs integration events, why dual writes fail, and the outbox replay pattern. Live demo: kill the process mid-operation and watch the replay.</p>
+            </div>
+
+            <div style="border-left: 4px solid #95a5a6; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px; background-color: #ecf0f1;">
+              <h4 style="color: #95a5a6; margin-bottom: 8px; margin-top: 0;">3:00-3:15 PM</h4>
+              <strong style="font-size: 16px;">Break</strong>
+            </div>
+
+            <div style="border-left: 4px solid #e74c3c; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px;">
+              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">3:15-4:00 PM</h4>
+              <strong style="font-size: 16px;">Lab 4: Fitness tests - rules that bind humans AND the AI</strong>
+              <p style="margin-top: 8px; margin-bottom: 0;">Architecture fitness tests as executable rulesets. Have the agent write the tests, then ask it to violate a rule and watch the build fail.</p>
+            </div>
+
+            <div style="border-left: 4px solid #e74c3c; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px;">
+              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">4:00-4:40 PM</h4>
+              <strong style="font-size: 16px;">The payoff: second module and extraction</strong>
+              <p style="margin-top: 8px; margin-bottom: 0;">Add a second module. Headline demo: lift the Tickets module out and run it as its own service behind a YARP gateway with no rewrite.</p>
+            </div>
+
+            <div style="border-left: 4px solid #e74c3c; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px;">
+              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">4:40-5:00 PM</h4>
+              <strong style="font-size: 16px;">Failure gallery, team adoption, wrap</strong>
+              <p style="margin-top: 8px; margin-bottom: 0;">Real examples of plausible-but-wrong agent output and verification habits. Take-home starter kit with context file templates and example hooks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- What You'll Leave With -->
+      <div class="row" style="margin-top: 40px;">
+        <div class="col-xs-12">
+          <div style="padding: 30px; background-color: #d4edda; border-radius: 8px; border-left: 4px solid #28a745;">
+            <h3 style="margin-top: 0; color: #155724;"><i class="fa fa-gift"></i> You'll Leave With</h3>
+            <ul style="margin-bottom: 0; line-height: 2; font-size: 16px;">
+              <li>A running solution you built yourself</li>
+              <li>A starter kit for your own repos (context file template, example hooks, custom command)</li>
+              <li>The habits to use an AI agent on production code without losing engineering discipline</li>
+              <li>Public repo with snapshot branches per lab</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="row" style="margin-top: 50px; margin-bottom: 50px;">
+        <div class="col-xs-12 text-center">
+          <div style="background-color: #e74c3c; color: white; padding: 40px; border-radius: 10px;">
+            <h3 style="color: white; margin-top: 0; font-size: 28px;">Ready to Build Better Software with AI?</h3>
+            <p class="lead" style="color: white; margin-bottom: 25px; font-size: 18px;">Secure your spot in this exclusive workshop. Limited seats available!</p>
+            <a href="https://events.ticketleap.com/tickets/developers-association-georgia/atlanta-developers-conference-precon" target="_blank" class="lgx-btn" style="background-color: white; color: #e74c3c; padding: 15px 40px; font-size: 20px; font-weight: bold; border: none;">
+              <span>Register for Workshop Now</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
