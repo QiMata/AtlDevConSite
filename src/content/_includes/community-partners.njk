@@ -27,7 +27,23 @@
             <div class="sponsors-area logo-grid" aria-label="Community partner logos">
               {% for img in communityPartners %}
               <div class="single">
+                {% if "devitus-rectangle" in img %}
+                <a href="https://devitjobs.com/" target="_blank" rel="noopener noreferrer">
+                {% elif "react-atl" in img %}
+                <a href="https://www.reactatl.dev/" target="_blank" rel="noopener noreferrer">
+                {% elif "HB-logo" in img %}
+                <a href="https://www.meetup.com/atlantahardwarebuilders/" target="_blank" rel="noopener noreferrer">
+                {% elif "user-group-net-logo" in img %}
+                <a href="https://www.meetup.com/atlanta-net-user-group/" target="_blank" rel="noopener noreferrer">
+                {% elif "azure-logo" in img %}
+                <a href="https://www.meetup.com/azure-in-the-atl/" target="_blank" rel="noopener noreferrer">
+                {% elif "azure-data" in img %}
+                <a href="https://www.meetup.com/atlanta-sql-server-azure-data/" target="_blank" rel="noopener noreferrer">
+                {% elif "power-bi" in img %}
+                <a href="https://www.meetup.com/atlanta-sharepoint-office-365-user-group/" target="_blank" rel="noopener noreferrer">
+                {% else %}
                 <a href="#">
+                {% endif %}
                   <img src="{{ img }}" alt="Community partner"/>
                 </a>
               </div>
