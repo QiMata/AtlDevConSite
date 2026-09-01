@@ -4,7 +4,8 @@ img.logo {
   margin-bottom: 10px;
 }
 
-.lgx-map, .lgx-map .heading {
+.lgx-map,
+.lgx-map .heading {
   color: #fff;
 }
 
@@ -12,7 +13,7 @@ img.logo {
   color: rgb(134, 134, 134);
 }
 
-#sessionize.sessionize-wrapper .sz-session.sz-session--full .sz-session__room, 
+#sessionize.sessionize-wrapper .sz-session.sz-session--full .sz-session__room,
 #sessionize.sessionize-wrapper .sz-session.sz-session--full .sz-session__time {
   display: none !important;
 }
@@ -32,13 +33,13 @@ img.logo {
 .lgx-banner-gradient .lgx-inner,
 .lgx-banner-gradient .bg-transparent,
 .bg-transparent {
-  background: transparent !important;  
+  background: transparent !important;
 }
 
 .lgx-banner-gradient .lgx-inner,
 .lgx-banner-gradient .bg-semitransparent,
 .bg-semitransparent {
-  background: rgba(24,24,24,.65) !important;  
+  background: rgba(24, 24, 24, .65) !important;
 }
 
 .lgx-banner .date span {
@@ -72,10 +73,10 @@ img.logo {
 }
 
 .btn-xl {
-  padding:12px 18px;
-  font-size:24px;
-  line-height:1.5;
-  border-radius:6px
+  padding: 12px 18px;
+  font-size: 24px;
+  line-height: 1.5;
+  border-radius: 6px
 }
 
 .mt-4 {
@@ -111,21 +112,59 @@ img.logo {
 }
 
 .lgx-about .topic-list {
-  padding-left: 2rem; 
+  padding-left: 2rem;
 }
 
 .fallback-schedule {
   display: none;
 }
+
 .fallback-schedule.mobile {
   display: block;
 }
 
+.logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.logo-grid .single {
+  width: 160px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo-grid .single a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+  padding: 0.75rem;
+}
+
+.logo-grid .single img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
 
 @media only screen and (min-width: 640px) {
   .fallback-schedule {
     display: block;
   }
+
   .fallback-schedule.mobile {
     display: none;
   }

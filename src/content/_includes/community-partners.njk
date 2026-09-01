@@ -1,0 +1,49 @@
+<!--COMMUNITY PARTNERS-->
+<section>
+  <div id="lgx-community-partners" class="lgx-sponsors">
+    <div class="lgx-inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <div class="lgx-heading-area">
+              <h2 class="lgx-heading">
+                <span class="back-heading">
+                  <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                </span>
+                <span class="heading">Community Partnerships</span>
+              </h2>
+            </div>
+            <p class="lead sponsored-heading">Our community partners</p>
+          </div>
+          <!--//main COL-->
+        </div>
+        <!--//main row-->
+
+        <div class="row">
+          <div class="col-xs-12">
+            {# Render only logos supplied in _data/communityPartners.json (generated from assets/img/community-partner) #}
+            {# Static, non-scrolling row: each logo appears exactly once, no duplicate track. #}
+            {% if communityPartners and communityPartners.length %}
+            <div class="sponsors-area logo-grid" aria-label="Community partner logos">
+              {% for img in communityPartners %}
+              <div class="single">
+                <a href="#">
+                  <img src="{{ img }}" alt="Community partner"/>
+                </a>
+              </div>
+              {% endfor %}
+            </div>
+            {% else %}
+            {# No community partner logos provided yet. #}
+            {% endif %}
+          </div>
+          <!--//col-->
+        </div>
+        <!--//row-->
+      </div>
+      <!--//container-->
+    </div>
+    <!--//lgx-inner-->
+  </div>
+</section>
+<!--COMMUNITY PARTNERS END-->
