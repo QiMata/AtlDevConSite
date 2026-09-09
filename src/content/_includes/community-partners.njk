@@ -27,7 +27,9 @@
             <div class="sponsors-area logo-grid" aria-label="Community partner logos">
               {% for img in communityPartners %}
               <div class="single">
-                {% if "devitus-rectangle" in img %}
+                {% if "Coding-Summit" in img %}
+                <a href="https://aicodingsummit.com/nyc/" target="_blank" rel="noopener noreferrer">
+                {% elif "devitus-rectangle" in img %}
                 <a href="https://devitjobs.com/" target="_blank" rel="noopener noreferrer">
                 {% elif "react-atl" in img %}
                 <a href="https://www.reactatl.dev/" target="_blank" rel="noopener noreferrer">
