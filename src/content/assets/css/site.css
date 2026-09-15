@@ -4,6 +4,88 @@ img.logo {
   margin-bottom: 10px;
 }
 
+/* Some section headings no longer have the back-heading icon, so the
+   absolutely-positioned .heading span needs to flow normally to avoid
+   overlapping the text below it. */
+#lgx-sponsors .lgx-heading,
+#lgx-community-partners .lgx-heading,
+#lgx-map .lgx-heading,
+#lgx-keynote .lgx-heading,
+#lgx-workshops .lgx-heading {
+  margin-top: 0;
+}
+
+#lgx-sponsors .lgx-heading .heading,
+#lgx-community-partners .lgx-heading .heading,
+#lgx-map .lgx-heading .heading,
+#lgx-keynote .lgx-heading .heading,
+#lgx-workshops .lgx-heading .heading {
+  position: static;
+  display: block;
+  line-height: normal;
+}
+
+/* SPONSORS SECTION - make it stand out from the page and normalize the
+   inconsistent spacing between tier headings (Platinum was getting the
+   ".first-heading" override while Gold/Silver fell back to a much larger
+   default top margin). */
+#lgx-sponsors {
+  background: linear-gradient(135deg, #14213d 0%, #1f3c73 55%, #142850 100%);
+  padding: 6rem 0 7rem;
+}
+
+#lgx-sponsors .lgx-inner {
+  background: transparent;
+}
+
+#lgx-sponsors .lgx-heading-area {
+  margin-bottom: 2rem;
+}
+
+#lgx-sponsors .lgx-heading .heading {
+  color: #ffffff;
+  letter-spacing: .15rem;
+}
+
+#lgx-sponsors p.lead.sponsored-heading {
+  color: #cfe0ff;
+}
+
+#lgx-sponsors .button-donload-sposership-packet {
+  margin-bottom: 1rem;
+}
+
+#lgx-sponsors h3.sponsored-heading {
+  color: #ffffff;
+  margin: 4.5rem 0 2.4rem 0;
+  position: relative;
+  padding-bottom: 1.2rem;
+}
+
+#lgx-sponsors h3.sponsored-heading.first-heading {
+  margin-top: 4.5rem;
+}
+
+#lgx-sponsors h3.sponsored-heading::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #4da3ff, #8fd3ff);
+}
+
+#lgx-sponsors .sponsors-area .single {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+#lgx-sponsors .sponsors-area .single a {
+  box-shadow: none;
+}
+
 .lgx-map,
 .lgx-map .heading {
   color: #fff;
