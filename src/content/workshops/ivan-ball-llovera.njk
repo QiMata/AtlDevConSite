@@ -1,5 +1,5 @@
 ---
-title: "Build a Modular Monolith with an AI Pair - Ivan Ball-llovera"
+title: "Build an AI-Ready .NET App with an AI Pair - Ivan Ball-llovera"
 layout: _basiclayout.njk
 pagename: "Pre-Conference Workshop"
 icon: "wrench"
@@ -15,8 +15,8 @@ eleventyExcludeFromCollections: true
         <div class="col-xs-12">
           <div style="margin-bottom: 30px;">
             <span class="badge" style="background-color: #e74c3c; color: white; padding: 8px 15px; font-size: 14px; margin-bottom: 15px; display: inline-block;">PRE-CONFERENCE WORKSHOP</span>
-            <h1 style="color: #e74c3c; margin-bottom: 10px;">Build a Modular Monolith with an AI Pair</h1>
-            <h2 style="color: #555; font-size: 24px; font-style: italic; font-weight: normal;">Architecture First, AI Fast: A Hands-On Day of Modular Monoliths and Agentic Development</h2>
+            <h1 style="color: #e74c3c; margin-bottom: 10px;">Build an AI-Ready .NET App with an AI Pair: Clean Architecture, MCP, and Agentic Workflows</h1>
+            <h2 style="color: #555; font-size: 24px; font-style: italic; font-weight: normal;">One day, the whole SDLC with an AI pair.</h2>
           </div>
         </div>
       </div>
@@ -39,7 +39,7 @@ eleventyExcludeFromCollections: true
       <!-- Workshop Details -->
       <div class="row" style="margin-bottom: 30px;">
         <div class="col-xs-12 col-md-8">
-          <p class="lead"><strong><i class="fa fa-calendar"></i> When:</strong> Full Day (8:00 AM - 5:00 PM)</p>
+          <p class="lead"><strong><i class="fa fa-calendar"></i> When:</strong> Full Day (8:15 AM - 5:00 PM)</p>
           <p class="lead"><strong><i class="fa fa-map-marker"></i> Where:</strong> Improving - 11675 Rainwater Dr #100, Alpharetta, GA 30009</p>
           <p class="lead"><strong><i class="fa fa-users"></i> Level:</strong> Intermediate .NET developers, tech leads, architects</p>
         </div>
@@ -55,7 +55,7 @@ eleventyExcludeFromCollections: true
         <div class="col-xs-12">
           <div style="background-color: #f8f9fa; padding: 25px; border-radius: 8px; margin-bottom: 30px; border-left: 4px solid #e74c3c;">
             <h3 style="margin-top: 0; color: #e74c3c;"><i class="fa fa-lightbulb-o"></i> Workshop Thesis</h3>
-            <p style="font-size: 16px; margin-bottom: 0;">Good architecture and agentic AI tooling are multipliers of each other: clear boundaries, explicit rules, and executable fitness tests are exactly what make an AI coding agent effective, and the agent is what makes the ceremony of a well-layered system cheap enough to actually build. This workshop teaches both at once by building one system with both.</p>
+            <p style="font-size: 16px; margin-bottom: 0;">Good architecture and agentic AI tooling multiply each other. Clear boundaries, explicit rules, executable fitness tests and CI gates are exactly what make an AI coding agent effective. The agent, in turn, makes the ceremony of a well-built, well-shipped system cheap enough to actually do. This workshop teaches both at once by taking one system through the whole software lifecycle with an AI pair.</p>
           </div>
         </div>
       </div>
@@ -64,13 +64,27 @@ eleventyExcludeFromCollections: true
       <div class="row">
         <div class="col-xs-12">
           <h3 style="color: #333;"><i class="fa fa-file-text-o"></i> What This Workshop Is About</h3>
-          <p>Microservices promised independent teams and independent scaling, and delivered distributed debugging, flaky integration environments, and a network hop inside every business transaction. The industry answer is now clear: start with a well-modularized monolith and extract services only when something real (team size, scaling, isolation) forces it. Meanwhile, AI coding assistants went from autocomplete to agents that read, plan, edit, and run tests, and most teams still use them like a fancy search box.</p>
-          
-          <p>This hands-on workshop teaches both, together, because they reinforce each other. Starting from an empty solution, you will build a modular monolith on .NET 10 with an AI pair (Claude Code) doing the heavy lifting while you make the architectural decisions: rich domain models whose factory methods return results instead of throwing, a hand-rolled CQRS pipeline that gives you validation and logging for free (no frameworks, you will see every line), reliable messaging via the outbox pattern, and architecture fitness tests that fail the build when someone (human or AI) violates a layer rule.</p>
-          
-          <p>Along the way you learn the agentic workflow that makes it fast: project context files, plan-first prompting, test-driven loops, hooks that make dangerous operations impossible, and reviewing AI diffs like a reviewer instead of rubber-stamping.</p>
-          
-          <p style="font-size: 18px; font-weight: bold; color: #e74c3c; margin-top: 20px;">The finale keeps the morning's promise twice over: we take a module and run it as its own service behind a YARP gateway with no rewrite, and we let the fitness tests catch the AI breaking a rule, live.</p>
+          <p>Most teams use AI coding agents like a fancy autocomplete. The agents have moved on: they read, plan, edit, run tests, write pipelines and review code. What they need from you is structure: a written spec, a codebase with real boundaries, and tests, hooks and gates that catch them when they are confidently wrong.</p>
+
+          <p>This hands-on day walks one application through every phase of the SDLC, with Claude Code as your pair while you make the decisions. You start from an empty solution and:</p>
+          <ul style="line-height: 1.9;">
+            <li>practice spec-driven development</li>
+            <li>build a modular .NET 10 app with a rich domain model and a hand-rolled CQRS pipeline (no frameworks, you will see every line)</li>
+            <li>test it at the unit and API level</li>
+            <li>lock the architecture in with fitness tests that fail the build when anyone, human or AI, breaks a layer rule</li>
+          </ul>
+
+          <p>Then you take it past the IDE:</p>
+          <ul style="line-height: 1.9;">
+            <li>Push it to GitHub behind a CI pipeline the agent wrote.</li>
+            <li>Watch a pull request go red on a deliberate violation and green after the fix.</li>
+            <li>Cut a release that publishes a container image.</li>
+            <li>Run it under Aspire and let the agent read live telemetry to find and fix a bug.</li>
+            <li>Let any AI client drive your app through an MCP endpoint hosted inside it, and watch your domain rules stop a prompt-injection attempt.</li>
+            <li>Have one agent score the architecture while a second agent tries to disprove the score.</li>
+          </ul>
+
+          <p style="font-size: 18px; font-weight: bold; color: #e74c3c; margin-top: 20px;">The day closes with a field report on a year of running two production applications and an open-source framework this way: what the agent caught, what it missed, and what it costs in tokens.</p>
         </div>
       </div>
 
@@ -79,26 +93,33 @@ eleventyExcludeFromCollections: true
         <div class="col-xs-12 col-md-6">
           <div style="background-color: #fff; padding: 25px; border: 2px solid #e74c3c; border-radius: 8px; height: 100%; margin-bottom: 20px;">
             <h3 style="margin-top: 0; color: #e74c3c;"><i class="fa fa-check-circle"></i> What You'll Build</h3>
-            <ul style="line-height: 2;">
-              <li>A complete modular monolith on .NET 10</li>
-              <li>Hand-rolled CQRS pipeline (no frameworks)</li>
-              <li>Rich domain models with factory methods</li>
-              <li>Reliable messaging via outbox pattern</li>
-              <li>Architecture fitness tests</li>
-              <li>Extractable microservice behind YARP gateway</li>
+            <ul style="line-height: 1.9;">
+              <li>A modular .NET 10 application, generated from a written spec</li>
+              <li>Rich domain models with factory methods that return results instead of throwing</li>
+              <li>A hand-rolled CQRS pipeline with validation and logging decorators (no frameworks)</li>
+              <li>Unit tests written first, and an API-level integration test against a real SQL container</li>
+              <li>Architecture fitness tests, plus the hooks and deny rules that guard the agent</li>
+              <li>A GitHub repo with agent-authored CI, branch protection, a dependency audit, and a tagged release that publishes a container image</li>
+              <li>An Aspire AppHost with dashboard traces, logs and health checks, set up so the agent can read them</li>
+              <li>An MCP endpoint hosted inside your app that lets Claude Code, VS Code or any MCP client drive it</li>
+              <li>An architecture scorecard written by one agent and checked by a second</li>
             </ul>
           </div>
         </div>
         <div class="col-xs-12 col-md-6">
           <div style="background-color: #fff; padding: 25px; border: 2px solid #3498db; border-radius: 8px; height: 100%; margin-bottom: 20px;">
             <h3 style="margin-top: 0; color: #3498db;"><i class="fa fa-graduation-cap"></i> What You'll Learn</h3>
-            <ul style="line-height: 2;">
-              <li>Domain-Driven Design building blocks</li>
-              <li>Clean Architecture on .NET 10</li>
-              <li>Agentic AI workflow patterns</li>
-              <li>Test-driven development with AI pairs</li>
-              <li>Module extraction strategies</li>
-              <li>Production-ready AI coding practices</li>
+            <ul style="line-height: 1.9;">
+              <li>Spec-driven development (SDD) and plan-first work with an AI agent</li>
+              <li>Context engineering: CLAUDE.md / AGENTS.md context files, and Agent Skills (SKILL.md) that work across Claude Code, Copilot and Codex</li>
+              <li>Domain-Driven Design building blocks and Clean Architecture on .NET 10</li>
+              <li>Test-driven development with an AI pair, from unit tests to integration tests</li>
+              <li>Guardrails that bind humans and agents alike: fitness tests, hooks, deny rules, sandboxing, least-privilege tokens, CI gates</li>
+              <li>Shipping with an agent: CI, supply-chain checks, AI code review, releases</li>
+              <li>Running and observing a .NET app with Aspire, including the Aspire MCP server</li>
+              <li>Model Context Protocol (MCP): the 2026 spec, its authorization model, and prompt-injection defense</li>
+              <li>Evals for architecture: the agent as judge, and how to keep it honest</li>
+              <li>Running a production SDLC with Claude Code: skills, parallel agents in git worktrees, and token/context discipline</li>
             </ul>
           </div>
         </div>
@@ -110,12 +131,17 @@ eleventyExcludeFromCollections: true
           <div style="padding: 25px; background-color: #fff3cd; border-radius: 8px; border-left: 4px solid #ffc107;">
             <h3 style="margin-top: 0; color: #856404;"><i class="fa fa-laptop"></i> Prerequisites (sent to attendees ahead of time)</h3>
             <ul style="margin-bottom: 10px; line-height: 1.8;">
+              <li>A laptop you can install software on</li>
               <li><strong>.NET 10 SDK</strong></li>
-              <li><strong>Docker Desktop</strong> (SQL Server runs as a container; nothing to install)</li>
-              <li><strong>Claude Code</strong> installed (CLI or VS Code / JetBrains extension) and signed in; a Claude subscription (Pro or Max) or an API key. <em>Those who cannot use Claude Code can still do every lab by hand; each lab handout includes the manual path.</em></li>
-              <li><strong>Git</strong> and an IDE of choice (VS, Rider, VS Code)</li>
+              <li><strong>Docker Desktop</strong> (SQL Server runs as a container; nothing else to install)</li>
+              <li><strong>Git</strong> and an IDE of your choice (Visual Studio, Rider, VS Code)</li>
+              <li><strong>Aspire CLI</strong> and templates</li>
+              <li><strong>Node.js</strong> (for the free MCP Inspector)</li>
+              <li>A <strong>GitHub account</strong> (the workshop repo you push will be public, so branch protection works on the free plan)</li>
+              <li><strong>Claude Code</strong>: nice to have, not required. With a Claude Pro or Max subscription or an API key, you will move faster. Without it, every lab still has a manual path, the MCP lab works with MCP Inspector or VS Code, and the scoring lab has a follow-along path.</li>
+              <li>Intermediate .NET (dependency injection, EF Core basics, xUnit)</li>
             </ul>
-            <p style="margin-bottom: 0; font-size: 16px;"><strong><i class="fa fa-info-circle"></i> Setup clinic available 8:15-9:00 AM</strong> for anyone who needs help</p>
+            <p style="margin-bottom: 0; font-size: 16px;"><strong><i class="fa fa-info-circle"></i> A setup checker script is emailed two weeks before. A setup clinic runs from 8:15 to 9:00 AM</strong> for anyone who needs help.</p>
           </div>
         </div>
       </div>
@@ -123,70 +149,117 @@ eleventyExcludeFromCollections: true
       <!-- Agenda -->
       <div class="row" style="margin-top: 40px;">
         <div class="col-xs-12">
-          <h3 style="color: #333; margin-bottom: 25px;"><i class="fa fa-calendar"></i> Full Day Agenda (8:00 AM - 5:00 PM)</h3>
+          <h3 style="color: #333; margin-bottom: 25px;"><i class="fa fa-calendar"></i> Full Day Agenda (8:15 AM - 5:00 PM)</h3>
+          <p style="margin-bottom: 25px; color: #666;">Each block is labeled with the lifecycle phase it covers.</p>
           
           <div style="margin-left: 20px;">
-            <div style="border-left: 4px solid #e74c3c; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px;">
-              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">9:00-9:45 AM</h4>
-              <strong style="font-size: 16px;">Why modular monoliths won, and what AI changes</strong>
-              <p style="margin-top: 8px; margin-bottom: 0;">The microservices hangover; the monolith-first path; what "extractable" actually requires. What an agentic coding tool actually is and why architecture discipline is precisely what makes it effective.</p>
+            <div style="border-left: 4px solid #95a5a6; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px; background-color: #ecf0f1;">
+              <h4 style="color: #95a5a6; margin-bottom: 8px; margin-top: 0;">8:15-9:00 AM</h4>
+              <strong style="font-size: 16px;">Setup clinic</strong>
+              <p style="margin-top: 8px; margin-bottom: 0;">Checks for the SDK, Docker, Git, your IDE, GitHub, Aspire and Node, plus an Aspire smoke test.</p>
             </div>
 
             <div style="border-left: 4px solid #e74c3c; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px;">
-              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">9:45-10:30 AM</h4>
-              <strong style="font-size: 16px;">Lab 1: Zero to walking skeleton, AI-assisted</strong>
-              <p style="margin-top: 8px; margin-bottom: 0;">Create the blank solution and let the agent scaffold the layer skeleton. Learn to write the context file (CLAUDE.md), use plan mode, and review before approving.</p>
+              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">9:00-9:15 AM</h4>
+              <strong style="font-size: 16px;">Map: the SDLC with an AI pair</strong>
+              <p style="margin-top: 8px; margin-bottom: 0;">The day's map is the lifecycle. The agent is a very fast new hire who onboards off the same rules your people do, and architecture discipline is exactly what makes it effective. Plus what this day is not: building agents into your software.</p>
+            </div>
+
+            <div style="border-left: 4px solid #e74c3c; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px;">
+              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">9:15-10:05 AM</h4>
+              <strong style="font-size: 16px;">Lab 1 (Plan): spec-driven walking skeleton</strong>
+              <p style="margin-top: 8px; margin-bottom: 0;">Write the context files first: CLAUDE.md, plus AGENTS.md for every other agent. Capture requirements and design in a spec, then use plan mode and review the plan. Finally, let the agent scaffold the layered solution and verify it.</p>
             </div>
 
             <div style="border-left: 4px solid #95a5a6; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px; background-color: #ecf0f1;">
-              <h4 style="color: #95a5a6; margin-bottom: 8px; margin-top: 0;">10:30-10:45 AM</h4>
+              <h4 style="color: #95a5a6; margin-bottom: 8px; margin-top: 0;">10:05-10:20 AM</h4>
               <strong style="font-size: 16px;">Break</strong>
             </div>
 
             <div style="border-left: 4px solid #e74c3c; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px;">
-              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">10:45 AM-12:00 PM</h4>
-              <strong style="font-size: 16px;">Lab 2: The domain layer - making illegal states unrepresentable</strong>
-              <p style="margin-top: 8px; margin-bottom: 0;">DDD building blocks: aggregates, factory methods returning Result&lt;T&gt;, value objects, domain events. Write tests first, let the agent make them pass, review the diff.</p>
+              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">10:20-11:10 AM</h4>
+              <strong style="font-size: 16px;">Lab 2 (Design and build): the domain layer, making illegal states unrepresentable</strong>
+              <p style="margin-top: 8px; margin-bottom: 0;">Aggregates, factory methods returning Result&lt;T&gt;, value objects and domain events. Write the tests first, let the agent make them pass, and review the diff like a reviewer. Plus a quick look at what the union types coming to C# in .NET 11 mean for this code.</p>
+            </div>
+
+            <div style="border-left: 4px solid #e74c3c; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px;">
+              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">11:10 AM-12:05 PM</h4>
+              <strong style="font-size: 16px;">Lab 3 (Build and test): CQRS by hand and the decorator pipeline</strong>
+              <p style="margin-top: 8px; margin-bottom: 0;">Commands versus queries, hand-rolled validation and logging decorators, and vertical slices added with one portable Agent Skill. The second slice is test-first at the API level: the agent writes an integration test against a real SQL container before writing the code. Plus a short look at the outbox pattern.</p>
             </div>
 
             <div style="border-left: 4px solid #95a5a6; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px; background-color: #ecf0f1;">
-              <h4 style="color: #95a5a6; margin-bottom: 8px; margin-top: 0;">12:00-1:00 PM</h4>
+              <h4 style="color: #95a5a6; margin-bottom: 8px; margin-top: 0;">12:05-12:50 PM</h4>
               <strong style="font-size: 16px;">Lunch</strong>
             </div>
 
             <div style="border-left: 4px solid #e74c3c; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px;">
-              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">1:00-2:15 PM</h4>
-              <strong style="font-size: 16px;">Lab 3: CQRS by hand, and the decorator pipeline</strong>
-              <p style="margin-top: 8px; margin-bottom: 0;">Commands vs queries; hand-rolled decorator pattern for validation and logging. Add complete vertical slices with the agent doing the ceremony.</p>
+              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">12:50-1:30 PM</h4>
+              <strong style="font-size: 16px;">Lab 4 (Verify): fitness tests, rules that bind humans AND the AI</strong>
+              <p style="margin-top: 8px; margin-bottom: 0;">Architecture fitness tests as executable rules: ask the agent to break one and watch the build fail. Then add the hooks, deny rules and sandboxing that make dangerous agent actions impossible, and give the agent only the permissions it needs.</p>
             </div>
 
             <div style="border-left: 4px solid #e74c3c; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px;">
-              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">2:15-3:00 PM</h4>
-              <strong style="font-size: 16px;">Events and the outbox: reliable messaging without distributed transactions</strong>
-              <p style="margin-top: 8px; margin-bottom: 0;">Domain events vs integration events, why dual writes fail, and the outbox replay pattern. Live demo: kill the process mid-operation and watch the replay.</p>
+              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">1:30-2:15 PM</h4>
+              <strong style="font-size: 16px;">Lab 5 (Review, integrate, release): ship it</strong>
+              <ul style="margin-top: 8px; margin-bottom: 0; line-height: 1.8;">
+                <li>Push to GitHub and have the agent write the CI workflow: build, unit, integration and fitness tests, plus lock files and a dependency audit.</li>
+                <li>Turn on branch protection with required checks.</li>
+                <li>Open a pull request with a deliberate layer violation, watch it go red, fix it, and merge on green.</li>
+                <li>See AI code review running as a required check.</li>
+                <li>Tag a release that publishes a container image.</li>
+              </ul>
+            </div>
+
+            <div style="border-left: 4px solid #e74c3c; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px;">
+              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">2:15-2:45 PM</h4>
+              <strong style="font-size: 16px;">Lab 6 (Deploy and operate): run it</strong>
+              <ul style="margin-top: 8px; margin-bottom: 0; line-height: 1.8;">
+                <li>The agent adds an Aspire AppHost.</li>
+                <li>Read the dashboard: traces across a create-ticket call, logs and health.</li>
+                <li>Learn why startup must wait on liveness, never readiness.</li>
+                <li>Connect the agent to the Aspire MCP server and watch it find a planted bug from live traces, fix it, and prove the fix.</li>
+                <li>Watch the same app deploy to Azure Container Apps from the pipeline.</li>
+              </ul>
             </div>
 
             <div style="border-left: 4px solid #95a5a6; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px; background-color: #ecf0f1;">
-              <h4 style="color: #95a5a6; margin-bottom: 8px; margin-top: 0;">3:00-3:15 PM</h4>
+              <h4 style="color: #95a5a6; margin-bottom: 8px; margin-top: 0;">2:45-3:00 PM</h4>
               <strong style="font-size: 16px;">Break</strong>
             </div>
 
             <div style="border-left: 4px solid #e74c3c; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px;">
-              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">3:15-4:00 PM</h4>
-              <strong style="font-size: 16px;">Lab 4: Fitness tests - rules that bind humans AND the AI</strong>
-              <p style="margin-top: 8px; margin-bottom: 0;">Architecture fitness tests as executable rulesets. Have the agent write the tests, then ask it to violate a rule and watch the build fail.</p>
+              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">3:00-3:55 PM</h4>
+              <strong style="font-size: 16px;">Lab 7 (Extend): your app as an MCP server</strong>
+              <p style="margin-top: 8px; margin-bottom: 0;">Host an MCP endpoint inside your app with the official .NET SDK, exposing the module's commands and queries as tools that reuse your existing handlers. Learn what the 2026 MCP spec changed and how remote MCP servers are secured. Connect Claude Code, VS Code or MCP Inspector and drive the app in plain English. Then try a prompt-injection attack through a poisoned ticket and watch your domain rules stop it.</p>
             </div>
 
             <div style="border-left: 4px solid #e74c3c; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px;">
-              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">4:00-4:40 PM</h4>
-              <strong style="font-size: 16px;">The payoff: second module and extraction</strong>
-              <p style="margin-top: 8px; margin-bottom: 0;">Add a second module. Headline demo: lift the Tickets module out and run it as its own service behind a YARP gateway with no rewrite.</p>
+              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">3:55-4:20 PM</h4>
+              <strong style="font-size: 16px;">Lab 8 (Govern): evals for architecture, the agent as judge</strong>
+              <p style="margin-top: 8px; margin-bottom: 0;">Write a five-rule mini rubric. Have one agent score the codebase with file-and-line evidence and a second agent try to disprove every score.</p>
             </div>
 
             <div style="border-left: 4px solid #e74c3c; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px;">
-              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">4:40-5:00 PM</h4>
-              <strong style="font-size: 16px;">Failure gallery, team adoption, wrap</strong>
-              <p style="margin-top: 8px; margin-bottom: 0;">Real examples of plausible-but-wrong agent output and verification habits. Take-home starter kit with context file templates and example hooks.</p>
+              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">4:20-4:55 PM</h4>
+              <strong style="font-size: 16px;">Maintain and improve: a year of production SDLC with Claude Code</strong>
+              <p style="margin-top: 8px; margin-bottom: 8px;">A field report from two production apps and an open-source framework:</p>
+              <ul style="margin-top: 0; margin-bottom: 0; line-height: 1.8;">
+                <li>custom commands and skills as codified workflows, with a five-minute mini-lab to write your own skill</li>
+                <li>parallel agents building in separate git worktrees</li>
+                <li>documentation that fails the build when it drifts</li>
+                <li>memory files and agent-maintained knowledge</li>
+                <li>security, performance and cost reviews run by the agent: what it caught and what it missed</li>
+                <li>real failure examples</li>
+                <li>the rules that cut token spend without cutting quality</li>
+                <li>a starter kit walkthrough</li>
+              </ul>
+            </div>
+
+            <div style="border-left: 4px solid #e74c3c; padding-left: 25px; margin-bottom: 25px; padding-top: 10px; padding-bottom: 10px;">
+              <h4 style="color: #e74c3c; margin-bottom: 8px; margin-top: 0;">4:55-5:00 PM</h4>
+              <strong style="font-size: 16px;">Wrap</strong>
+              <p style="margin-top: 8px; margin-bottom: 0;">A three-minute clip of the finale this architecture makes possible: lifting a module out to run as its own service behind a gateway, with no rewrite. Snapshot branches, and goodbye.</p>
             </div>
           </div>
         </div>
@@ -198,10 +271,11 @@ eleventyExcludeFromCollections: true
           <div style="padding: 30px; background-color: #d4edda; border-radius: 8px; border-left: 4px solid #28a745;">
             <h3 style="margin-top: 0; color: #155724;"><i class="fa fa-gift"></i> You'll Leave With</h3>
             <ul style="margin-bottom: 0; line-height: 2; font-size: 16px;">
-              <li>A running solution you built yourself</li>
-              <li>A starter kit for your own repos (context file template, example hooks, custom command)</li>
-              <li>The habits to use an AI agent on production code without losing engineering discipline</li>
-              <li>Public repo with snapshot branches per lab</li>
+              <li>A running, tested, released application you built yourself, in your own public GitHub repo</li>
+              <li>A CI pipeline, release workflow, Aspire setup and in-app MCP endpoint you can copy to your own projects</li>
+              <li>An MIT-licensed starter kit to use on Monday: CLAUDE.md and AGENTS.md templates; hooks, deny rules and sandbox settings; a fitness-test starter; CI and release workflow templates, and an Aspire starter; Agent Skills; a mini rubric with scorer and verifier agents; a reference MCP host; a one-page token-discipline checklist</li>
+              <li>The habits to use an AI agent across your whole delivery process without losing engineering discipline</li>
+              <li>A public reference repo with a snapshot branch per lab, so falling behind never means dropping out</li>
             </ul>
           </div>
         </div>
