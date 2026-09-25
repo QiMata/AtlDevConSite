@@ -80,10 +80,30 @@ img.logo {
 
 #lgx-sponsors .sponsors-area .single {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  vertical-align: middle;
 }
 
 #lgx-sponsors .sponsors-area .single a {
   box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  box-sizing: border-box;
+}
+
+/* Some sponsor logos are near-square (vs. the typical wide wordmark), which
+   made their cards look oversized/uneven since the theme only capped width,
+   not height. Give every card a fixed height and let the logo scale to fit
+   within it so all sponsor tiles line up consistently regardless of the
+   source image's aspect ratio. */
+#lgx-sponsors .sponsors-area .single a img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+
 }
 
 .lgx-map,
