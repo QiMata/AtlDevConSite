@@ -106,6 +106,19 @@ img.logo {
 
 }
 
+/* The Binary Works logo's wordmark is rendered in white, which disappears
+   against the white sponsor card background. Stack several 1px offset
+   drop-shadows (instead of a single blurred one) to trace a crisp dark
+   outline around the white shapes so the mark stays sharp/legible instead
+   of looking like a soft smudged glow. */
+#lgx-sponsors .sponsors-area .single a.sponsor-binaryworks img {
+  filter:
+    drop-shadow(1px 0 0 rgba(0, 0, 0, 0.55))
+    drop-shadow(-1px 0 0 rgba(0, 0, 0, 0.55))
+    drop-shadow(0 1px 0 rgba(0, 0, 0, 0.55))
+    drop-shadow(0 -1px 0 rgba(0, 0, 0, 0.55));
+}
+
 .lgx-map,
 .lgx-map .heading {
   color: #fff;
