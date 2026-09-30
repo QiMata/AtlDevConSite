@@ -7,14 +7,18 @@ eleventyExcludeFromCollections: true
 ---
 <div>
   <script type="text/javascript" src="https://sessionize.com/api/v2/{{ site.sessionize.embedId }}/view/GridSmart"></script>
-  <div id="sessionize-fallback">
+  <div id="sessionize-fallback" class="hide">
     <img class="fallback-schedule" src="/assets/img/schedule/schedule-2022.png" alt="schedule" />
     <img class="fallback-schedule mobile" src="/assets/img/schedule/schedule-2022-mobile.png" alt="schedule" />
   </div>
 </div>
 <p class="italic">Schedule subject to change.</p>
 <script>
+  var sessionizeFallbackTimer = setTimeout(function () {
+    document.getElementById("sessionize-fallback").classList.remove('hide');
+  }, 5000);
   window.addEventListener('sessionize.onload', function (e) {
+    clearTimeout(sessionizeFallbackTimer);
     document.getElementById("sessionize-fallback").classList.add('hide');
   });
 </script>
