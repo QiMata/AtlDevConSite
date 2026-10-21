@@ -1,0 +1,38 @@
+<!--GALLERY PREVIEW-->
+<section>
+  <div id="lgx-gallery-preview" class="lgx-photo-gallery">
+    <div class="lgx-inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="lgx-heading-area">
+              <h2 class="lgx-heading" style="margin-top:0;margin-bottom:2rem;">
+                <span class="heading" style="position:static;display:block;line-height:1.2;">Photo Gallery</span>
+              </h2>
+              <p class="text">Thank you to everyone who joined us in 2026 — here are some of our favorite moments.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        .gallery-preview-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 0 8px; }
+        .gallery-preview-grid a { display: block; aspect-ratio: 4 / 3; overflow: hidden; background: #222; }
+        .gallery-preview-grid img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; transition: transform .3s; }
+        .gallery-preview-grid a:hover img { transform: scale(1.06); }
+        @media (max-width: 767px) { .gallery-preview-grid { grid-template-columns: repeat(2, 1fr); } }
+      </style>
+      <div class="container-fluid">
+        <div class="gallery-preview-grid">
+          {% for n in [2, 9, 15, 26, 36, 47] %}
+          {% set num = "0" + n if n < 10 else n %}
+          <a href="/gallery"><img src="/assets/img/gallery/photo-{{ num }}.jpg" alt="Atlanta Developers' Conference 2026 photo" loading="lazy"/></a>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="text-center" style="margin: 50px 0 70px;">
+        <a href="/gallery" class="lgx-btn lgx-btn-red"><span>View the Gallery</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--GALLERY PREVIEW END-->
