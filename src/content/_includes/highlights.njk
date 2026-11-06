@@ -1,0 +1,44 @@
+<!--2026 HIGHLIGHTS-->
+<section>
+  <div id="lgx-highlights-2026" class="lgx-photo-gallery">
+    <div class="lgx-inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <div class="lgx-heading-area">
+              <h2 class="lgx-heading">
+                <span class="back-heading"><i class="fa fa-picture-o" aria-hidden="true"></i></span>
+                <span class="heading">2026 Highlights</span>
+              </h2>
+              <p class="text">May 30, 2026 in Alpharetta.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row highlights-photos">
+          {# PHOTOS: Swap these for the best photos from May 30, 2026 (add files to assets/img/highlights/ and update src/alt/caption). #}
+          {% set photos = [
+            { src: "carousel-1.jpg", alt: "Attendees at the conference", caption: "Packed rooms" },
+            { src: "carousel-3.jpg", alt: "A speaker presenting", caption: "Great sessions" },
+            { src: "carousel-5.jpg", alt: "Attendees talking between sessions", caption: "Hallway conversations" }
+          ] %}
+          {% for photo in photos %}
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <figure class="highlight">
+              <img src="/assets/img/carousel/{{ photo.src }}" alt="{{ photo.alt }}" class="img-responsive" loading="lazy"/>
+              <figcaption>{{ photo.caption }}</figcaption>
+            </figure>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <div>
+              <a href="/2026/" class="btn btn-primary-site">Explore the 2026 Archive</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--2026 HIGHLIGHTS END-->

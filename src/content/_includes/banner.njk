@@ -1,6 +1,11 @@
 <!--BANNER-->
 <section>
-  <div class="lgx-banner lgx-banner-gradient bg-devcon">
+  <div class="lgx-banner lgx-banner-gradient bg-devcon hero-slides">
+    <div class="hero-slideshow" aria-hidden="true">
+      <span style="background-image:url('/assets/img/carousel/carousel-1.jpg')"></span>
+      <span style="background-image:url('/assets/img/carousel/carousel-3.jpg')"></span>
+      <span style="background-image:url('/assets/img/carousel/carousel-5.jpg')"></span>
+    </div>
     <div class="lgx-banner-style bg-transparent">
       <div class="lgx-inner bg-transparent">
         <div class="container">
@@ -8,13 +13,20 @@
             <div class="col-xs-12">
               <div class="banner-info">
                 {# <img src="assets/svg/atldevcon-logo-white.svg" class="logo" alt="Atlanta Developers' Conference Logo"/> #}
-                <h2 class="title">Atlanta <span style="color:#0099cc">Cloud + AI</span> Conference</h2>
+                <h2 class="title">Atlanta <span style="color:#7fb6d1">Cloud + AI</span> Conference <span style="color:#fff">2027</span></h2>
                 <h2 class="date">
-                   <span>{{ site.eventDate | formatDate }}</span>
+                   <span>{{ site.nextEvent.dateText }}</span>
                 </h2>
-                 <div class="circular-countdown-area">
-                  <div id="circular-countdown" data-date="{{ site.eventDate | formatISO("P") }}" ></div>
-                </div> 
+                {# COUNTDOWN: Restore once a date is confirmed. Set site.nextEvent.countdownDate (e.g. 2027-04-24T12:30:00Z) in _data/site.json. #}
+                {% if site.nextEvent.countdownDate %}
+                <div class="circular-countdown-area">
+                  <div id="circular-countdown" data-date="{{ site.nextEvent.countdownDate | formatISO("P") }}" ></div>
+                </div>
+                {% endif %}
+                <p class="banner-cta">
+                  <a href="#help-find-venue" class="btn btn-primary-site lgx-scroll">Help Us Find a Venue</a>
+                  <a href="#become-sponsor" class="btn btn-outline-site lgx-scroll">Become a Sponsor</a>
+                </p>
               </div>
             </div>
           </div>

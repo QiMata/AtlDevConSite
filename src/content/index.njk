@@ -4,20 +4,11 @@ layout: _layout.njk
 template: home
 ---
 {% include "banner.njk" %}
-{# {% include "nextyear.njk" %} #}
-{% include "keynote.njk" %}
 {% include "about.njk" %}
+{% include "venue.njk" %}
+{% include "highlights.njk" %}
+{% include "thanks.njk" %}
 
-{# REGISTRATION #}
-{# ANNOUNCE: Show the following line when tickets are available. #}
-{# {% include "register.njk" %} #} 
-
-{% include "speakers.njk" %}
-
-{% include "sponsors.njk" %}
-{# {% include "photos.njk" %} #}
-{# {% include "schedule.njk" %} NOTE: Does not appear to be correctlyconnected to Sessionize at this time. #}
-{# {% include "testimonials.njk" %} #}
-{# {% include "location.njk" %} #}
-{% include "map.njk" %}
-{% include 'app.njk' %}
+{# 2027 TODO: when the venue is confirmed, restore {% include "map.njk" %} and update site.json location. #}
+{# When tickets are available: {% include "register.njk" %} #}
+{# Archived in /2026/: keynote.njk, app.njk. Old sections: speakers.njk, sponsors.njk (2026 sponsor packet), photos.njk, schedule.njk, testimonials.njk #}

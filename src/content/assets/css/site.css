@@ -183,3 +183,74 @@ img.logo {
 #lgx-keynote .col-md-8 p {
   margin-bottom: 1.5rem;
 }
+/* 2027 homepage */
+.banner-cta { margin-top: 30px; }
+.banner-cta .btn { margin: 5px 8px; }
+.highlights-photos figure.highlight { margin: 0 0 30px; }
+.highlights-photos figure.highlight img { width: 100%; border-radius: 6px; }
+.highlights-photos figure.highlight figcaption { margin-top: 8px; font-style: italic; text-align: center; }
+.archive-note { margin-top: 15px; opacity: .8; }
+.volunteers-list li { padding: 0 10px; }
+.become-sponsor { margin-top: 60px; }
+.stay-updated-form legend { font-size: 16px; border: 0; margin-bottom: 8px; }
+.stay-updated-form .checkbox-inline { margin: 0 15px 8px 0; }
+.archive-links { padding: 20px 0; }
+.archive-links .btn { margin: 5px; }
+
+/* Modern refresh */
+/* Buttons: one shape, one size */
+.btn-primary-site, .btn-outline-site, .venue-btn {
+  display: inline-block; border-radius: 4px; padding: 12px 28px; font-size: 16px; font-weight: 600;
+  letter-spacing: .02em; border: 2px solid transparent; transition: background .15s ease, color .15s ease;
+}
+.btn-primary-site { background: #d9822b; color: #fff; border-color: #d9822b; }
+.btn-primary-site:hover, .btn-primary-site:focus { background: #b86a1c; border-color: #b86a1c; color: #fff; }
+.btn-outline-site { background: transparent; color: #fff; border-color: rgba(255,255,255,.7); }
+.btn-outline-site:hover, .btn-outline-site:focus { background: #fff; color: #1b2433; }
+.archive-links .btn-primary-site, .lgx-sponsors .btn-outline-site { margin: 5px; }
+.highlights-photos figure.highlight { margin-bottom: 20px; }
+.highlights-photos figure.highlight img { border-radius: 6px; box-shadow: 0 8px 24px rgba(0,0,0,.15); }
+.lgx-sponsors .sponsors-area .single { background: #fff; border-radius: 6px; box-shadow: 0 4px 16px rgba(0,0,0,.08); padding: 16px 24px; }
+.become-sponsor { margin-top: 40px; padding: 40px 20px; border-radius: 6px; background: linear-gradient(120deg, #3b2f55 0%, #5a3d6e 100%); color: #fff; }
+.become-sponsor .sponsored-heading, .become-sponsor .lead { color: #fff; }
+
+/* Venue callout: muted slate */
+.venue-callout { background: linear-gradient(120deg, #1f2a3a 0%, #2f3f5c 100%); color: #fff; padding: 48px 0; border-top: 4px solid #d9822b; }
+.venue-callout h2 { font-family: 'Oswald', sans-serif; text-transform: uppercase; color: #fff; font-size: 36px; margin: 8px 0 10px; }
+.venue-callout p { color: rgba(255,255,255,.88); font-size: 18px; margin: 0; }
+.venue-eyebrow { font-family: 'Oswald', sans-serif; font-weight: 400; display: inline-block; background: rgba(217,130,43,.2); color: #f0b070; border-radius: 4px; padding: 4px 12px; font-size: 13px; text-transform: uppercase; letter-spacing: .08em; }
+.venue-action { display: flex; align-items: center; justify-content: flex-end; }
+.venue-btn { background: #d9822b; color: #fff; border-color: #d9822b; }
+.venue-btn:hover { background: #b86a1c; border-color: #b86a1c; color: #fff; }
+@media (max-width: 991px) { .venue-action { justify-content: flex-start; margin-top: 24px; } .venue-callout h2 { font-size: 28px; } }
+
+/* Hero background slideshow (dark overlay) */
+.hero-slides { position: relative; overflow: hidden; }
+.hero-slides .lgx-banner-style { position: relative; z-index: 2; }
+.hero-slideshow, .hero-slideshow::after { position: absolute; inset: 0; z-index: 0; }
+.hero-slideshow::after { content: ""; background: linear-gradient(to bottom right, rgba(20,28,40,.88), rgba(35,50,75,.78)); }
+.hero-slideshow span { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0; animation: heroFade 18s infinite; }
+.hero-slideshow span:nth-child(2) { animation-delay: 6s; }
+.hero-slideshow span:nth-child(3) { animation-delay: 12s; }
+@keyframes heroFade { 0% { opacity: 0; } 8% { opacity: 1; } 33% { opacity: 1; } 41% { opacity: 0; } 100% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .hero-slideshow span { animation: none; } .hero-slideshow span:first-child { opacity: 1; } }
+
+/* Remove icons behind section headers */
+/* visibility (not display) keeps the heading height the layout depends on */
+.lgx-heading .back-heading { visibility: hidden; }
+
+/* Space below the archive button */
+#lgx-highlights-2026 .lgx-inner { padding-bottom: 80px; }
+
+/* Footer layout */
+#lgx-footer .lgx-inner { padding: 60px 0 40px; text-align: center; }
+#lgx-footer .lgx-logo { margin: 0 0 24px; }
+#lgx-footer .lgx-logo img.logo { width: 160px; max-width: 80%; height: auto; margin: 0 auto; display: block; }
+#lgx-footer .footer-social { margin-bottom: 24px; }
+#lgx-footer .footer-social ul li { background: none; padding: 0 6px; border-radius: 0; }
+#lgx-footer .footer-social ul li:hover { background: none; }
+#lgx-footer .footer-social ul li a { display: inline-block; width: 44px; height: 44px; border-radius: 4px; background: transparent; border: 1px solid rgba(255,255,255,.5); color: #fff; font-size: 20px; text-align: center; box-shadow: none; }
+#lgx-footer .footer-social ul li a i { line-height: 42px; }
+#lgx-footer .footer-social ul li:hover a { background: #d9822b; border-color: #d9822b; color: #fff; }
+#lgx-footer .lgx-copyright { margin: 0; color: rgba(255,255,255,.75); }
+#lgx-footer .lgx-copyright span { display: inline; }
